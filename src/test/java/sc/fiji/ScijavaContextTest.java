@@ -9,7 +9,7 @@ class ScijavaContextTest
 	@Test
 	void testContext()
 	{
-		for ( int i = 0; i < 100; i++ )
+		for ( int i = 0; i < 500; i++ )
 			try (org.scijava.Context context = new org.scijava.Context())
 			{
 
