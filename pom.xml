@@ -99,18 +99,18 @@
 
 	<dependencies>
 		<!-- include fiji -->
-		<!--
 		<dependency>
 			<groupId>sc.fiji</groupId>
 			<artifactId>fiji</artifactId>
 			<scope>test</scope>
 		</dependency>
-		-->
 		<!-- only scijava-common -->
+		<!--
 		<dependency>
 			<groupId>org.scijava</groupId>
 			<artifactId>scijava-common</artifactId>
 		</dependency>
+		-->
 
 		<!-- JUnit 5 - https://junit.org/junit5/ -->
 		<dependency>
