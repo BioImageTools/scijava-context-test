@@ -104,6 +104,25 @@
 			<artifactId>fiji</artifactId>
 			<scope>test</scope>
 			<exclusions>
+
+				<!-- Fiji Is Just ImageJ! -->
+				<exclusion>
+					<groupId>net.imagej</groupId>
+					<artifactId>imagej</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>net.imagej</groupId>
+					<artifactId>ij</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>net.imagej</groupId>
+					<artifactId>ij1-patcher</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>net.imagej</groupId>
+					<artifactId>imagej-legacy</artifactId>
+				</exclusion>
+
 				<!-- Standard Fiji projects - https://github.com/fiji -->
 				<exclusion>
 					<groupId>org.janelia</groupId>
