@@ -104,6 +104,22 @@
 			<artifactId>fiji</artifactId>
 			<scope>test</scope>
 			<exclusions>
+				<!-- SciJava dependencies - https://github.com/scijava -->
+				<exclusion>
+					<groupId>org.scijava</groupId>
+					<artifactId>app-launcher</artifactId>
+				</exclusion>
+				<!-- Third-party dependencies -->
+				<exclusion>
+					<groupId>org.javassist</groupId>
+					<artifactId>javassist</artifactId>
+				</exclusion>
+				<!-- Runtime dependencies -->
+				<exclusion>
+					<groupId>org.scijava</groupId>
+					<artifactId>script-editor-jython</artifactId>
+				</exclusion>
+
 				<!-- Standard Fiji projects - https://github.com/fiji -->
 				<exclusion>
 					<groupId>org.janelia</groupId>
