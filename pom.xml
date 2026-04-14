@@ -99,25 +99,29 @@
 
 	<dependencies>
 		<!-- include fiji -->
+		<!--
 		<dependency>
 			<groupId>sc.fiji</groupId>
 			<artifactId>fiji</artifactId>
 			<scope>test</scope>
 			<exclusions>
-				<!-- Fiji Is Just ImageJ! -->
 				<exclusion>
 					<groupId>net.imagej</groupId>
 					<artifactId>imagej-legacy</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!-- only scijava-common -->
-		<!--
+		-->
+		<!-- scijava-common -->
 		<dependency>
 			<groupId>org.scijava</groupId>
 			<artifactId>scijava-common</artifactId>
 		</dependency>
-		-->
+		<!-- imagej-legacy -->
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej-legacy</artifactId>
+		</dependency>
 
 		<!-- JUnit 5 - https://junit.org/junit5/ -->
 		<dependency>
