@@ -114,6 +114,10 @@
 					<groupId>net.imagej</groupId>
 					<artifactId>ij</artifactId>
 				</exclusion>
+				<exclusion>
+					<groupId>net.imagej</groupId>
+					<artifactId>imagej-legacy</artifactId>
+				</exclusion>
 
 				<!-- Standard Fiji projects - https://github.com/fiji -->
 				<exclusion>
