@@ -104,17 +104,6 @@
 			<artifactId>fiji</artifactId>
 			<scope>test</scope>
 			<exclusions>
-				<!-- Third-party dependencies -->
-				<exclusion>
-					<groupId>org.javassist</groupId>
-					<artifactId>javassist</artifactId>
-				</exclusion>
-				<!-- Runtime dependencies -->
-				<exclusion>
-					<groupId>org.scijava</groupId>
-					<artifactId>script-editor-jython</artifactId>
-				</exclusion>
-
 				<!-- Standard Fiji projects - https://github.com/fiji -->
 				<exclusion>
 					<groupId>org.janelia</groupId>
@@ -599,6 +588,51 @@
 				<exclusion>
 					<groupId>io.scif</groupId>
 					<artifactId>scifio-ome-xml</artifactId>
+				</exclusion>
+
+
+				<exclusion>
+					<groupId>ch.qos.reload4j</groupId>
+					<artifactId>reload4j</artifactId>
+				</exclusion>
+
+				<!-- JFreeSVG - https://www.jfree.org/jfreesvg/ -->
+				<exclusion>
+					<groupId>org.jfree</groupId>
+					<artifactId>jfreesvg</artifactId>
+				</exclusion>
+
+				<!-- JOGL libraries, for Java 3D - https://github.com/jogamp -->
+				<exclusion>
+					<groupId>org.jogamp.gluegen</groupId>
+					<artifactId>gluegen-rt</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.jogamp.jogl</groupId>
+					<artifactId>jogl-all</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.jogamp.gluegen</groupId>
+					<artifactId>gluegen-rt</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.jogamp.jogl</groupId>
+					<artifactId>jogl-all</artifactId>
+				</exclusion>
+
+				<!-- Optional runtime dependencies -->
+				<exclusion>
+					<groupId>org.scijava</groupId>
+					<artifactId>scijava-config</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>ch.qos.logback</groupId>
+					<artifactId>logback-classic</artifactId>
+				</exclusion>
+				<!-- Test scope dependencies -->
+				<exclusion>
+					<groupId>junit</groupId>
+					<artifactId>junit</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
